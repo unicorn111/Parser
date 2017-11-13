@@ -37,11 +37,11 @@ public class Parser {
         }
         String result = count + " star_reviews from " + url + " \n";
         System.out.print(result);
-        file_saver(result);
+        save_results(result);
 
     }
 
-    public static void file_saver(String result){
+    public static void save_results(String result){
         File file = new File("parsing_reviews_results.csv");
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(file,true));
